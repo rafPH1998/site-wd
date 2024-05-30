@@ -1,7 +1,9 @@
 <header class="bg-blue-900 w-full p-8 animate__animated animate__fadeIn">
     <div class="flex justify-between items-center">
-        <div class="w-40">
-            <img src="assets/images/logotipo_horizontal_mono_verde.png" alt="">
+        <div class="w-40 cursor-pointer">
+            <a href="index.php">
+                <img src="assets/images/logotipo_horizontal_mono_verde.png" alt="">
+            </a>
         </div>
         <ul class="text-white flex items-center space-x-6 cursor-pointer">
             <li class="hover:border-b border-white">

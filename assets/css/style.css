@@ -9,3 +9,42 @@
         opacity: 0;
     }
 }
+
+.content {
+    position: relative; 
+    background-image: url('/assets/images/ti.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+
+.content > * {
+    position: relative; 
+    z-index: 2;
+}
+
+.button-gradient {
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Gradiente de azul escuro para azul claro */
+    color: white; /* Cor do texto */
+    transition: background 0.3s ease; /* Transição suave ao focar */
+}
+
+.button-gradient:hover {
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a); /* Inversão do gradiente ao passar o mouse */
+}
+
+.button-gradient:focus {
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Mantém o gradiente original ao focar */
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* Adiciona o anel de foco */
+}

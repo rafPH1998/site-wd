@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php require 'header.php' ?>
-        <div class="w-full p-8 flex flex-col bg-gray-150">
+        <div class="w-full p-16 flex flex-col bg-gray-150">
             <h1 class="text-4xl text-blue-950 font-bold flex justify-center items-center">Entrar em contato</h1>
             <div class="flex justify-center mt-10">
                 <div class="bg-white border rounded p-4 shadow-md">

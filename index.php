@@ -6,13 +6,14 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <?php require 'header.php' ?>
-    <main class="bg-blue-950  animate__animated animate__fadeIn">
+    <main class="bg-blue-950 animate__animated animate__fadeIn">
         <div class="flex justify-center items-center p-4">
-            <h1 class="text-3xl text-white" id="typewriter-text">
+            <h1 class="text-3xl text-white animate__animated animate__backInLeft">
                 Ajudamos a você a solucionar os problemas do seu <span class="text-4xl ml-1 text-[#e7ff11]">negócio</span><span id="cursor">|</span>
             </h1>
         </div>        
@@ -64,37 +65,56 @@
             </div>
         </div>
     </main>
-    <div class="bg-gray-100 w-full p-8 flex flex-col justify-center items-center">
+    <div class="bg-gray-100 w-full p-12 flex flex-col justify-center items-center animate__animated animate__heartBeat">
         <h1 class="text-blue-950 text-4xl font-bold">Serviços</h1>
-        <div class="flex flex-wrap space-x-16 uppercase mt-12">
-            <div class="flex flex-col bg-[#e7ff11] p-8 rounded shadow-md">
-                <img src="assets/images/locacao.png" alt="locacao" class="w-28 h-28">
-                <p class="flex justify-center text-blue-950 font-bold mt-2">Locação</p>
+        <div class="flex items-center space-x-12 mt-8">
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Locação</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
             </div>
-            <div class="flex flex-col bg-blue-950 p-8 rounded shadow-md">
-                <img src="assets/images/seta_extra.png" alt="Assistência" class="w-28 h-28">
-                <p class="flex justify-center text-[#e7ff11] mt-2">Service Desk</p>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-yellow-500">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Service Desk</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
             </div>
-            <div class="flex flex-col bg-white p-8 rounded shadow-md">
-                <img src="assets/images/loja.png" alt="loja" class="w-28 h-28">
-                <p class="flex justify-center text-blue-950 font-bold mt-2">HelpDesk</p>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
+                <span class="font-bold text-xl">HelpDesk</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
             </div>
-         <!--    <div class="flex flex-col bg-blue-950 p-8 rounded shadow-md">
-                <img src="assets/images/impressora.png" alt="Locação" class="w-28 h-28">
-                <p class="flex justify-center text-[#e7ff11] mt-2">Locação</p>
-            </div> -->
-            <div class="flex flex-col bg-white p-8 rounded shadow-md">
-                <img src="assets/images/mesa_.png" alt="Locação" class="w-28 h-28">
-                <p class="flex justify-center text-blue-950 font-bold mt-2">Soluções TI</p>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-yellow-500">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Soluções TI</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
             </div>
-          <!--   <div class="flex flex-col bg-blue-950 p-8 rounded shadow-md">
-                <img src="assets/images/seta_preferencial.png" alt="Locação" class="w-28 h-28">
-                <p class="flex justify-center text-[#e7ff11] mt-2">Loja</p>
-            </div> -->
+        </div>
+        <div class="flex items-center space-x-12 mt-8">
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Locação</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
+            </div>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-yellow-500">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Service Desk</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
+            </div>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
+                <span class="font-bold text-xl">HelpDesk</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
+            </div>
+            <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-yellow-500">
+                <img src="" alt="">
+                <span class="font-bold text-xl">Soluções TI</span>
+                <img src="assets/images/help.png" alt="" class="w-24 h-24">
+            </div>
+        </div>
+        <div class="mt-8">
+            <a href="contato.php" class="button-gradient text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Entre em contato</a>
         </div>
     </div>
-    <div class="bg-blue-950 px-48 py-8 flex flex-col justify-center items-center">
-        <h1 class="text-white text-4xl font-bold">O que entregamos de soluções</h1>
+    <div class="content px-48 py-12 flex flex-col" style="height: 700px;">
+        <h1 class="text-white text-6xl font-bold mt-12">O que entregamos de soluções</h1>
         <div class="w-full flex space-x-4 mt-10">
             <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
                 <span class="text-2xl">Solução</span>
