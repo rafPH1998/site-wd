@@ -11,6 +11,7 @@
 </head>
 <body>
     <?php require 'header.php' ?>
+    <!-- MAIN -->
     <main class="bg-blue-950 animate__animated animate__fadeIn">
         <div class="flex justify-center items-center p-4">
             <h1 class="text-3xl text-white animate__animated animate__backInLeft">
@@ -65,6 +66,9 @@
             </div>
         </div>
     </main>
+    <!-- MAIN -->
+    
+    <!-- SERVICOS -->
     <div class="bg-gray-100 w-full p-12 flex flex-col justify-center items-center animate__animated animate__heartBeat">
         <h1 class="text-blue-950 text-4xl font-bold">Serviços</h1>
         <div class="flex items-center space-x-12 mt-8">
@@ -113,30 +117,67 @@
             <a href="contato.php" class="button-gradient text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Entre em contato</a>
         </div>
     </div>
+    <!-- SERVICOS -->
+
+    <!-- SOLUÇÕES -->
     <div class="content px-48 py-12 flex flex-col" style="height: 700px;">
         <h1 class="text-white text-6xl font-bold mt-12">O que entregamos de soluções</h1>
-        <div class="w-full flex space-x-4 mt-10">
-            <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
-                <span class="text-2xl">Solução</span>
-                <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+
+        <div id="default-carousel" class="relative w-full mt-10" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="flex justify-center">
+                <!-- Item 1 -->
+                <div class="w-2/3 hidden space-x-4 mt-10 duration-700 ease-in-out active" data-carousel-item>
+                    <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
+                        <span class="text-2xl">Solução 1</span>
+                        <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="w-2/3 hidden space-x-4 mt-10 duration-700 ease-in-out" data-carousel-item>
+                    <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
+                        <span class="text-2xl">Solução 2</span>
+                        <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="w-2/3 hidden space-x-4 mt-10 duration-700 ease-in-out" data-carousel-item>
+                    <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
+                        <span class="text-2xl">Solução 3</span>
+                        <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                    </div>
+                </div>
+                 <!-- Item 4 -->
+                 <div class="w-2/3 hidden space-x-4 mt-10 duration-700 ease-in-out" data-carousel-item>
+                    <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
+                        <span class="text-2xl">Solução 4</span>
+                        <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+                    </div>
+                </div>
             </div>
-            <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
-                <span class="text-2xl">Solução</span>
-                <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
-            </div>
-        </div>
-        <div class="w-full flex space-x-4 mt-8">
-            <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
-                <span class="text-2xl">Solução</span>
-                <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
-            </div>
-            <div class="border rounded border-gray-500 p-6 flex-1 text-white flex flex-col">
-                <span class="text-2xl">Solução</span>
-                <span class="text-sm italic">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
-            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
     </div>
-   <?php require 'footer.php' ?>
+    <!-- SOLUÇÕES -->
+    <?php require 'footer.php' ?>
 </body>
 </html>
+
+
 

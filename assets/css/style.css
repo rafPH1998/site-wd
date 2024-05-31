@@ -48,3 +48,23 @@
     outline: none; /* Remove a borda de foco padrão */
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* Adiciona o anel de foco */
 }
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: slideInFromLeft 0.7s forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

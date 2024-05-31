@@ -1,28 +1,49 @@
-function typeWriter(element, speed) {
-    const text = element.innerHTML;
-    element.innerHTML = "";
-    let i = 0;
-    function type() {
-        if (i < text.length) {
-            if (text.charAt(i) === '<') {
-                let tag = '';
-                while (text.charAt(i) !== '>') {
-                    tag += text.charAt(i);
-                    i++;
-                }
-                tag += text.charAt(i);
-                element.innerHTML += tag;
-            } else {
-                element.innerHTML += text.charAt(i);
-            }
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    type();
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('[data-carousel-item]');
+    const prevButton = document.querySelector('[data-carousel-prev]');
+    const nextButton = document.querySelector('[data-carousel-next]');
+    let currentIndex = 0;
+    let intervalId;
 
-document.addEventListener("DOMContentLoaded", () => {
-    const element = document.getElementById("typewriter-text");
-    typeWriter(element, 100);
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.toggle('hidden', i !== index);
+            item.classList.toggle('active', i === index);
+            
+            if (i === index) {
+                item.style.animation = 'none';
+                item.offsetHeight; 
+                item.style.animation = '';
+            }
+        });
+    }
+
+    function nextItem() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+    }
+
+    function prevItem() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+    }
+
+    prevButton.addEventListener('click', function() {
+        clearInterval(intervalId);
+        prevItem();
+        startCarousel();
+    });
+
+    nextButton.addEventListener('click', function() {
+        clearInterval(intervalId);
+        nextItem();
+        startCarousel();
+    });
+
+    function startCarousel() {
+        intervalId = setInterval(nextItem, 6000);
+    }
+
+    showItem(currentIndex);
+    startCarousel();
 });
