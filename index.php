@@ -18,17 +18,17 @@
                 Ajudamos a você a solucionar os problemas do seu <span class="text-4xl ml-1 text-[#e7ff11]">negócio</span><span id="cursor">|</span>
             </h1>
         </div>        
-        <div class="flex justify-center items-center p-20 space-x-96">
+        <div class="flex sm:flex-row flex-col justify-center items-center p-20 sm:space-x-96 space-x-0">
             <div class="bg-white w-96">
                 <img src="assets/images/logo_tipo.png" alt="" class="bg-blue-950">
             </div>
-            <div class="w-96">
-                <div class="flex items-center">
+            <div class="sm:w-96 w-full">
+                <div class="flex items-center mt-28 sm:mt-0">
                     <img src="assets/images/seta_preferencial.png" alt="" class="w-8 h-8">
                     <h1 class="text-[#e7ff11] text-3xl ml-6">Felipe Magalhães</h1>
                 </div>
                 <div class="mt-6">
-                <div class="space-y-4">
+                    <div class="space-y-4">
                         <div class="flex items-center text-white font-bold">
                             <span class="[&>svg]:h-7 [&>svg]:w-7 cursor-pointer">
                                 <svg
@@ -61,17 +61,17 @@
                             </svg>
                             <h1 class="text-xl ml-6">felipe@fjoffice.com.br</h1>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- MAIN -->
-    
+
     <!-- SERVICOS -->
     <div class="bg-gray-100 w-full p-12 flex flex-col justify-center items-center animate__animated animate__heartBeat">
         <h1 class="text-blue-950 text-4xl font-bold">Serviços</h1>
-        <div class="flex items-center space-x-12 mt-8">
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-12 space-x-0 mt-8 space-y-6 sm:space-y-0">
             <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
                 <img src="" alt="">
                 <span class="font-bold text-xl">Locação</span>
@@ -92,7 +92,7 @@
                 <img src="assets/images/help.png" alt="" class="w-24 h-24">
             </div>
         </div>
-        <div class="flex items-center space-x-12 mt-8">
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-12 space-x-0 sm:mt-8 mt-0 space-y-6 sm:space-y-0">
             <div class="shadow-lg rounded flex flex-col justify-center items-center p-4 w-64 border-b border-blue-800">
                 <img src="" alt="">
                 <span class="font-bold text-xl">Locação</span>
@@ -120,7 +120,7 @@
     <!-- SERVICOS -->
 
     <!-- SOLUÇÕES -->
-    <div class="content px-48 py-12 flex flex-col" style="height: 700px;">
+    <div class="content sm:px-48 px-4 sm:py-12 py-0 flex flex-col" style="height: 700px;">
         <h1 class="text-white text-6xl font-bold mt-12">O que entregamos de soluções</h1>
 
         <div id="default-carousel" class="relative w-full mt-10" data-carousel="slide">

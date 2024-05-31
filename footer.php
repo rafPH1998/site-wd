@@ -1,8 +1,9 @@
-<div class="bg-gray-200 py-8 px-48 flex-col">
-    <div class="flex justify-between items-center space-x-8">
-        <div class="w-full">
+<div class="bg-gray-200 py-8 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 flex flex-col">
+    <div class="flex flex-col sm:flex-row justify-between items-center sm:space-x-8 space-y-4 sm:space-y-0">
+        <div class="w-full flex justify-center sm:justify-start">
             <img src="assets/images/logo_tipo_azul.png" alt="Logo tipo">
         </div>
+        
         <div class="w-full text-blue-950 text-sm flex flex-col">
             <div class="flex items-center cursor-pointer hover:text-blue-600">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
